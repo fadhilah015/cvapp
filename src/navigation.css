@@ -1,0 +1,42 @@
+
+
+
+.logo{
+  background-color: #404040;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+
+}
+ul {
+
+  list-style-type: none;
+  width: 95%;
+  background-color: #e6e6e6;
+  height: 40%;
+  overflow: hidden;
+  font-size:20px;
+
+}
+
+li {
+  display: inline;
+  float: right;
+}
+
+
+li a {
+  align-items: center;
+  display:white;
+  height: 40%;
+  padding: 30px;
+  background-color: #e6e6e6;
+  color: #282c34;
+}
+
