@@ -10,9 +10,9 @@ class Navigation extends React.Component {
 
           <h1 >{this.props.LogoTitle}</h1>
           <ul>
-            <li><a href="#">الرئيسية </a></li>
-            <li><a href="#">رفع الملفات </a></li>
-            <li><a href="#">عنا </a></li>
+            <li><a >ملئ المعلومات  </a></li>
+            <li><a >رفع الملفات </a></li>
+            <li><a >عنا </a></li>
 
           </ul>
 

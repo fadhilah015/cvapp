@@ -5,7 +5,8 @@ import ReactDOM from 'react-dom';
 import Navigation from './navigation';
 import About from './about-us';
 import Uploade from './uploade';
-import Foter from './foter'
+import Foter from './foter';
+import Information from './information'
 import * as serviceWorker from './serviceWorker';
 
 class App extends React.Component {
@@ -15,6 +16,7 @@ class App extends React.Component {
 
       <div>
         <Navigation LogoTitle="السيرة الذاتية" />
+      <Information />
       <Uploade />
       <About />
 
