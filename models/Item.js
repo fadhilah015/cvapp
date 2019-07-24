@@ -4,11 +4,11 @@ const Schema = mongoose.Schema;
 // creat Schema
 const ItemSchema = new Schema(
   {
-    fname: {typ: String, required: true, max: 100},
-    lname: {typ: String, required: true, max: 100},
-    university: {typ: String, required: true, max: 100},
-    major: {typ: String,required: true, max: 100},
-
+    fname: {
+      type: String, required: true },
+    lname: {type: String, required: true },
+    university: {type: String, required: true},
+    major: {type: String,required: true}
   });
 
 module.exports = Item = mongoose.model('item', ItemSchema);
