@@ -9,6 +9,10 @@ import Foter from './foter';
 import Information from './information'
 import * as serviceWorker from './serviceWorker';
 
+
+
+
+
 class App extends React.Component {
   render() {
 
