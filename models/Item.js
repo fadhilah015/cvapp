@@ -4,7 +4,7 @@ const Schema = mongoose.Schema;
 // creat Schema
 const ItemSchema = new Schema(
   {
-    fname: {
+    name: {
       type: String, required: true },
     lname: {type: String, required: true },
     university: {type: String, required: true},
