@@ -22,7 +22,9 @@ class App extends React.Component {
         <Navigation LogoTitle="السيرة الذاتية" />
       <Information />
       <Uploade />
+      <showInfo />
       <About />
+
 
       <Foter />
 

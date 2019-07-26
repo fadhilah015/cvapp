@@ -1,6 +1,7 @@
 const express = require ('express');
 const mongoose = require ('mongoose');
 const bodyParser = require('body-parser');
+const path =  require('path');
 
 
 const items = require ('./routes/api/items');
@@ -20,11 +21,20 @@ mongoose
   .catch (err => console.log());
 
 
-
-
 // use routes
 
 app.use('/api/items', items);
+//sever static assetc if in production
+if (process.env.NODE_ENV ==='production'){
+  app.use(express.static('build'));
+  app.get('*',(req, res)=>{
+    res.sendFile(path.resolve(__dirname,'build','index.js'));
+
+
+
+  });
+
+}
 
 const port = process.env.PORT || 5000;
 
