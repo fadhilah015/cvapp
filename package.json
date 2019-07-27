@@ -20,6 +20,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "eject": "react-scripts eject",
+    "dev":"concurrently \"npm run server\" ",
     "heroku-postbuild":"NPM_CONFIG_PRODUCTION=false npm install && npm run build"
 
   },
