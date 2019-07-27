@@ -8,17 +8,14 @@ constructor(){
       items:[],
       isLoaded: false,
 
-    }
-
-  }
+    }}
 coponentDidMount(){
   fetch('/routes/api/items')
   .then(res => res.json())
   .then(json =>{
     this.setState({ isLoaded:true, items:json,})
-    });
+    });}
 
-}
 render () {
   var{isLoaded , items}= this.state;
   if(!isLoaded){
